@@ -2,7 +2,8 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## This function create a list object with 4 functions set, get, setinverse, 
+## getinverse. It includes the matrix and its inverse.
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -17,7 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## This function stores an in-memory inverse matrix in case it has not been computed.
+## With a makeCacheMatrix as an argument. Additionally, it returns the inverse matrix.
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
   if(!is.null(inv)) {
